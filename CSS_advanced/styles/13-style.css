@@ -55,23 +55,23 @@
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
-/* Links (only with href) */
-a[href] {
+/* Links */
+a:link {
   color: var(--text-color);
   text-decoration: none;
 }
 
 /* Visited */
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
 /* Hover */
-a[href]:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* Active */
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);
 }
