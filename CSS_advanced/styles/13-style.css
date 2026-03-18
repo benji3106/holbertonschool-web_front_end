@@ -27,55 +27,19 @@
   --line-height-base: 1.5;
   --line-height-big: 1.8;
 
-  /* Section */
   --section-header-align: center;
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+
 }
 
-/* Base */
-html {
-  font-size: 62.5%;
-}
-
-body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-base);
-}
-
-/* Links */
-a[href] {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-a[href]:visited {
-  font-style: italic;
-}
-
-a[href]:hover {
-  text-decoration: underline;
-}
-
-a[href]:active {
-  background-color: var(--color-light-grey);
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-title);
-  font-weight: var(--font-weight-bold);
-}
-
-/* Sections */
+/* Section header */
 .section-header {
   text-align: var(--section-header-align);
 }
 
+/* Section title */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -84,19 +48,30 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--section-title-color);
 }
 
+/* Section tagline */
 .section-tagline {
   color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
-
-/* Components */
-.card-category {
-  color: var(--color-primary);
+/* Links (only with href) */
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-/* Accessibility */
-.visually-hidden {
-  display: none;
+/* Visited */
+a[href]:visited {
+  font-style: italic;
+}
+
+/* Hover */
+a[href]:hover {
+  text-decoration: underline;
+}
+
+/* Active */
+a[href]:active {
+  background-color: var(--color-light-grey);
 }
